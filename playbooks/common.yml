@@ -1,0 +1,16 @@
+---
+- hosts: default
+  remote_user: vagrant
+  become: true
+  become_method: sudo
+  tasks:
+#  - name : updates a server
+#    apt : update_cache=yes
+#  - name : upgrade a server
+#    apt : upgrade=full
+  - name : install packages
+    apt : pkg={{item}} state=present update_cache=yes
+    with_items :
+    - curl
+    - python-software-properties
+

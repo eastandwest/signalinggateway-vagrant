@@ -1,0 +1,6 @@
+---
+- hosts: default
+  remote_user: vagrant
+  tasks:
+  - name: install gstreamer
+    command: bash -c "sudo add-apt-repository -y ppa:gstreamer-developers/ppa;sudo apt-get update;sudo apt-get -y install gstreamer1.0"
