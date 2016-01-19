@@ -26,5 +26,5 @@
       - libtool
       - automake
       - cmake
-  - name : install jaus
+  - name : install janus
     script : ./files/janus.sh

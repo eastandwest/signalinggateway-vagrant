@@ -73,7 +73,10 @@ Vagrant.configure(2) do |config|
   #config.vm.provision :ansible, playbook: "playbooks/common.yml"
   config.vm.provision :ansible, playbook: "playbooks/node.yml"
   config.vm.provision :ansible, playbook: "playbooks/janus.yml"
-#config.vm.provision :ansible, playbook: "playbooks/gstreamer.yml"
+  #config.vm.provision :ansible, playbook: "playbooks/gstreamer.yml"
+# todo : playbook for nginx
+#
+# todo : janus & gstreamer as daemon
   #end
 
 end
