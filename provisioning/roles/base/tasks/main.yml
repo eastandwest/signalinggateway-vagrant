@@ -1,0 +1,22 @@
+---
+# tasks file for provisioning/roles/base
+- name: Ensure aptitude is installed
+  apt:
+    pkg: aptitude
+    state: latest
+- name: Update apt
+  apt: update_cache=yes
+- name: Upgrade apt
+  apt: upgrade=full
+- name: Ensure sudo is installed
+  apt:
+    pkg: sudo
+    state: latest
+- name: Install base packages
+  apt:
+    pkg: "{{item}}"
+    state: installed
+  with_items:
+    - curl
+    - git
+

@@ -40,5 +40,6 @@ cd ~/
 rm -rf janus-install
 
 # make symbolic link
-ln -s /opt/janus/share/janus/demos demos
-ln -s /opt/janus/share/janus/streams streams
+cd /home/vagrant
+ln -s /opt/janus/share/janus/streams /home/vagrant/streams
+chown -R vagrant:vagrant /home/vagrant/streams

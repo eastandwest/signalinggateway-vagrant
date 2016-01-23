@@ -1,0 +1,31 @@
+---
+# tasks file for provisioning/roles/janus
+#
+- name : Get aptitude for upgrade
+  apt : pkg=aptitude state=present
+
+- name : install dependency libraries
+  apt : pkg={{item}} state=present update_cache=yes
+  with_items :
+  - libmicrohttpd-dev
+  - libjansson-dev
+  - libnice-dev
+  - libssl-dev
+  - libsrtp-dev
+  - libsofia-sip-ua-dev
+  - libglib2.0-dev
+  - libopus-dev
+  - libogg-dev
+  - libini-config-dev
+  - libcollection-dev
+  - pkg-config
+  - gengetopt
+  - libtool
+  - automake
+  - cmake
+- name : install janus
+  script : janus.sh
+- name : run as daemon
+  command : nohup bash -c '/opt/janus/bin/janus 2>&1 &'
+- name : config init.d
+  copy: src=rc.local dest=/etc/rc.local owner=root mode=755

@@ -1,0 +1,10 @@
+---
+- hosts: janusservers
+  sudo: yes
+  remote_user: vagrant
+  roles:
+  - base
+  - bennojoy.nginx
+  - gstreamer
+  - nodesource.node
+  - janus
