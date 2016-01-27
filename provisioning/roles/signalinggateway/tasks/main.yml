@@ -1,0 +1,6 @@
+---
+# tasks file for provisioning/roles/base
+
+- name: clone signalinggateway repo on home directory
+  git: repo=https://github.com/eastandwest/signalinggateway.git dest=/home/vagrant/signalinggateway
+

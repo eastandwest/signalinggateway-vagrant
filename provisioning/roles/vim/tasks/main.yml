@@ -1,0 +1,8 @@
+---
+# tasks file for provisioning/roles/base
+- name: download .vimrc from gist
+  get_url: url=https://gist.githubusercontent.com/KensakuKOMATSU/cd2859aeb5e0432740eb/raw/cabcbc0aefea6d8c86fc491903812fc1658938c5/vimrc dest=/home/vagrant/.vimrc
+
+- name: clone Vundle.vim on home directory
+  git: repo=https://github.com/VundleVim/Vundle.vim.git dest=/home/vagrant/.vim/bundle/Vundle.vim
+

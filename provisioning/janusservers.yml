@@ -4,6 +4,9 @@
   remote_user: vagrant
   roles:
   - base
+  - vim
+  - signalinggateway
+  - HanXHX.redis
   - bennojoy.nginx
   - gstreamer
   - nodesource.node
