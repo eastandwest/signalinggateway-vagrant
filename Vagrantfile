@@ -14,4 +14,7 @@ Vagrant.configure(2) do |config|
     ansible.inventory_path = 'provisioning/development'
     ansible.playbook = 'provisioning/site.yml'
   end
+  config.vm.provider "virtualbox" do |v|
+    v.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/vagrant", "1"]
+  end
 end

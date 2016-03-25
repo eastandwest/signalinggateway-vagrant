@@ -6,3 +6,8 @@
 - name: clone Vundle.vim on home directory
   git: repo=https://github.com/VundleVim/Vundle.vim.git dest=/home/vagrant/.vim/bundle/Vundle.vim
 
+- name: chown for .vimrc
+  command: chown vagrant.vagrant /home/vagrant/.vimrc
+
+- name: chown for .vim
+  command: chown -R vagrant.vagrant /home/vagrant/.vim

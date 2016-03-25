@@ -4,3 +4,5 @@
 - name: clone signalinggateway repo on home directory
   git: repo=https://github.com/eastandwest/signalinggateway.git dest=/home/vagrant/signalinggateway
 
+- name: change permission
+  command: chown -R vagrant.vagrant /home/vagrant/signalinggateway
