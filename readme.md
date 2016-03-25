@@ -44,4 +44,4 @@ you'll see the color bar type video stream ;)
 $ ansible-playbook --private-key=.vagrant/machines/default/virtualbox/private_key -i provisioning/development provisioning/site.yml
 ```
 
-&copy; kensaku.komatsu@gmail.com
+&copy; kensaku komatsu, 2016
