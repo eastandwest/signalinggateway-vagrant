@@ -38,7 +38,7 @@ $ open http://192.168.33.10/streamingtest.html
 
 you'll see the color bar type video stream ;)
 
-## run ansible-playbook manyally
+## run ansible-playbook manually
 
 ```
 $ ansible-playbook --private-key=.vagrant/machines/default/virtualbox/private_key -i provisioning/development provisioning/site.yml
