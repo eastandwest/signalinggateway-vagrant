@@ -15,6 +15,7 @@ Vagrant.configure(2) do |config|
     ansible.playbook = 'provisioning/site.yml'
   end
   config.vm.provider "virtualbox" do |v|
+    v.memory = 1024
     v.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/vagrant", "1"]
   end
 end
