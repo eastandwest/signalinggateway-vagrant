@@ -1,2 +1,5 @@
 .vagrant
 vagrant_ansible_inventory_*
+.DS_Store
+provisioning/site.retry
+

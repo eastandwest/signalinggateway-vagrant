@@ -25,6 +25,10 @@
   - cmake
 - name : install janus
   script : janus.sh
+- name : enable https port
+  replace: dest=/opt/janus/etc/janus/janus.transport.http.cfg regexp='https = no' replace='https = yes' backup=yes
+- name : enable https port
+  replace: dest=/opt/janus/etc/janus/janus.transport.http.cfg regexp='\n.*;secure_port = 8889' replace='\nsecure_port = 8089' backup=yes
 - name : run as daemon
   command : nohup bash -c '/opt/janus/bin/janus 2>&1 &'
 - name : config init.d
