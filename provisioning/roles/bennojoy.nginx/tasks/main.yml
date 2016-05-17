@@ -25,6 +25,12 @@
     - "sites-available"
     - "sites-enabled"
 
+- name: copy keys
+  copy: src=roles/bennojoy.nginx/files/keys dest=/home/vagrant/ owner=vagrant group=vagrant mode=0644
+
+- name: copy janus-demo-ssl
+  copy: src=roles/bennojoy.nginx/files/janus-demos-ssl dest=/etc/nginx/sites-enabled/janus-demos-ssl  owner=root group=vagrant mode=0644
+
 - name: Copy the nginx configuration file 
   template: src=nginx.conf.j2 dest=/etc/nginx/nginx.conf
   notify: 
