@@ -25,7 +25,5 @@
   npm: name={{item}} global=yes
   with_items:
     - mocha
-    - webpack
-    - webpack-dev-server
     - forever
 
