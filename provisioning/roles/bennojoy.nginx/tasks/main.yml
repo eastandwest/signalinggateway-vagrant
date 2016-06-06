@@ -26,7 +26,7 @@
     - "sites-enabled"
 
 - name: copy keys
-  copy: src=roles/bennojoy.nginx/files/keys dest=/home/vagrant/ owner=vagrant group=vagrant mode=0644
+  copy: src=roles/bennojoy.nginx/files/keys dest=/home/{{remote_user}}/ owner={{remote_user}} group={{remote_user}} mode=0644
 
 - name: Copy the nginx configuration file
   template: src=nginx.conf.j2 dest=/etc/nginx/nginx.conf

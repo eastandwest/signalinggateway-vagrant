@@ -38,6 +38,6 @@ sudo make configs
 
 
 # make symbolic link
-cd /home/vagrant
-ln -s /opt/janus/share/janus/streams /home/vagrant/streams
-chown -R vagrant:vagrant /home/vagrant/streams
+cd /home/pi
+ln -s /opt/janus/share/pi/streams /home/pi/streams
+chown -R pi:pi /home/pi/streams

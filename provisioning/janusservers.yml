@@ -1,7 +1,7 @@
 ---
 - hosts: janusservers
   sudo: yes
-  remote_user: vagrant
+  remote_user: pi
   roles:
   - base
   - vim
