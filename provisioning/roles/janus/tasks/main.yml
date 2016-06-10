@@ -24,7 +24,7 @@
   - automake
   - cmake
 - name : install janus
-  script : janus.sh
+  script : janus.sh "{{remote_user}}"
   become: yes
   become_user: "{{remote_user}}"
 - name : enable https port

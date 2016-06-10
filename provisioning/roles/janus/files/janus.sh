@@ -1,4 +1,5 @@
 #!/bin/bash
+username=$1
 
 # create working directory
 mkdir ~/janus-install
@@ -38,6 +39,6 @@ sudo make configs
 
 
 # make symbolic link
-cd /home/pi
-ln -s /opt/janus/share/pi/streams /home/pi/streams
-chown -R pi:pi /home/pi/streams
+cd /home/${username}
+ln -s /opt/janus/share/janus/streams /home/${username}/streams
+chown -R ${username}:${username} /home/${username}/streams
