@@ -1,0 +1,1573 @@
+[  0000000] Initialiing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 4.4.0-43-generic (buildd@lgw01-22) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu~16.04.2) ) #63-Ubuntu SMP Wed Oct  13:48:03 UTC 26 (Ubuntu 4.4.0-43.63-generic 4.4.21)
+[    0.000000] Command line:BOOT_IMAGE=/boot/vmlinuz-4.4.0-43-generic root=LEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+   0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenueIntel
+[    0.000000]  AD AuthenticAMD
+[    000000]   CentaurenaurHauls[   .00000x8/fpu:xsat_ose[2]: 76, xstate_sizes[2]:  26
+   .00000 x6/fpu: Supporting XSAVE feature 0x01: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x02: 'SSE registers
+[   0.0000]x86pu: Supporting XSAVE feature 0x04: 'AVX regsters'
+[  0.000000] x86/fpu: Enabled xstate features 0x7 cntext szeis832 bes, usig tandar' format.
+[    0.000000] x86/fpu: Using 'lazy' FPU context switches.
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000-0x000000000009fbff] usable[    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffffreserved
+[    0.000000] BIOS-e820: [mem 0x00000000000f00-0x00000000000fffff] reserved
+[    0.000000] BIS-20: [mem 0x0000000000100000-0000000003ffeff] usable
+[    0.00000] BIOS-e82 [mem 0x000000003fff0000-0x000000003fffffff] ACPI at
+    0.00000 BOS-e820: [mem 0x00000000fffc0000-0x000000fffffff] resrvd
+[    0.00000 NX (Eece Disbl) roteion: actie
+[   000000] SMBIOS 2.5 presnt
+[    0.000000] Hypervisor detected: KVM
+[    0.000000] e820: last_pfn = 0x3ff0ax_arch_pfn = 0x40000000
+   0.00000] MTRR: sabled
+[    000000] x86/PAT: MTRRs disle, skpping PAT initiliation too.
+[    0.000000] 6/PAT: Configuration [0-7]: WB WT  UC- UC  WB  WT  UC- UC  
+[    0.000000] CPU MTRRs all blank - virtualized ystem.
+[  0.000000] foundSM MP-tabl at [mem 0x0009fff0-0x0009fff] mapped at [ffff88000009fff0]
+[    0.000000] Scannin 1 eas fo low memory orruption
+[    0.00000] RMDISK: [mem 0x36fd80000x377e3fff
+[    0.000000] ACPI: Early table cecksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000000E0000 000024 (v VOX  )
+[    0.000000] ACPI: XSDT 0x000000003FFF0030 00003C (v01 VBOX   VBOXXSDT 000001 ASL   00000061)
+[    0.000000] ACPI: FACP 0x000000003FF00F 00F4 (v04 VBOX   VBOXFACP 00000001 ASL 000001)
+[    0.000000] ACPI: DSDT 0x00000000FF047 001CEB (v01 VBOX   VBOXBIOS 00000002 INTL 20100528)
+[    0.000000] ACPI: FACS 0x000000003FFF0200 000040
+[    0.000000] AI: FACS 0x000000003FFF0200 000040
+[    0.000000] ACPI: APIC 0x000000003FFF0240 00005C (v02 VBOX   VBOXAPIC 00000001 ASL  0000006
+[    0.000000] ACPI: SSDT 0x000000003FFF02A0 0001CC (v01 VBOX   VBOXCPUT00000002 INTL 20100528)
+[    0.000000] No MA configuration found
+[    0.000000] Faking a node at [mem 0x00000000000000-000000003ffeffff]
+[    0.000000] NODE_DTA(0) allocated [mem 0xfeb000-0x3ffeffff]
+[    0.000000] kvm-clock: Using msrs 4b564d01and 4b564d00
+[   0.000000] kvm-clk: cpu 0, msr 0:3ffe7001, pmary cpu clock[    0.000000] kvm-clock: using sched offset of 304072054 cycles
+[    0.00000] clocksurce: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_n 881590591483 ns
+[    0.000000Zone ranges:
+[    0.000000]   MA    [m 0x000000001000-0x00000000ffffff]
+[    0.000000]   DMA32    me 0x0000000001000000-0x0000000ffefff]
+[   .000000]   Nrml   empy[    0.000000  Device  epty
+[   0.0000] Movabl zne art fr each node
+[    0.000000] Early emory node ranges
+[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.000000]   node   0: [mem 0x0000000000100000-0x000000003ffeffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x000000003ffeffff]
+[    0.000000] ACPI: PM-Timer IO Port: 0x4008
+[    0.000000] IOAPIC[0]: apicid2, vesin 17, address 0fe00000, GSI 0-23
+[    0.000000] ACPI INT_SRC_R (bus 0 bus_i 0 global_irq 2 dfl dl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_rq 9 global_irq 9 high leve)
+[    0.000000] Using ACPI (MADT) for SMP configuration infrmtion
+[    0.000000] smpboot: Allowing 2 CPUs, 0 hotplug CPUs
+[    0.0000] PM: Registered nosave memory[mem 0x00000000-0x00000fff]
+[    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[    0.000000] PM: Registered nav memory: [mem 0x000a0000-0x000efff]
+[    0.000000] PM: Registered nosave memory: [mem 0000000-0000fffff]
+[    0.0000] e820: [mem 0x40000000-0xfffbffff] available fr PCI devices
+[    0.000000] Booing paravirualid erl n KVM
+[    0000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.000000] setup_percpu: NR_CPUS:256 nr_cpumask_bits:256 nr_cpu_ids:2 nr_node_ids:1
+[    0.000000] PERCPU: Embedded 33 pages/cpu @ffff88003fc00000 s9808 r8192 d28968 u1048576
+[    0.00000] PV qspinlock hash table entries: 256 (order: 0, 4096 bytes)
+[  0.000000] Bult 1 onelists in Node order, mobility grouping on.  Total pages: 257913
+[    0.000000] Policy zone: DMA32
+[    0.000000] Kernel cmmd line BOOT_IMAGE=/boot/vmlinuz-4.4.0-43-generic root=LABEL=coudi-rootfs ro console=tty1 console=ttyS0
+[    0.000000] PID hash table entries: 406 (rder3, 32768 bytes)
+[    0.000000] Memory: 104396K/1048120K available (8409K krne code, 1283K rwdata, 3944K roda, 480K init, 1292K bss, 43724K reservd, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    .000000] 	Build-time adjustment of leaf fanout to 64.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=2.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=2
+[    0.000000] NR_IRQS:16640 nr_irqs:440 16
+[   .000000] Console: coloour VGA+ 0x5
+[    0.000000] console [tty1] enabled
+[    0.000000] console [ttyS0] enabled
+[    0.000000] tsc: Detected 2600.000 MHz processor[    8.519610] Calibrating delay loop (skipped) preset value.. 5200.00 BogoMIPS (lpj=10400000)
+[    8.590505] pid_max: default: 32768 minimum: 301
+[    8.610446] ACPI: Core revision 20150930
+[    8.629961] ACPI: 2 ACPI AML tables successfully acquired and loaded
+[    8.678301] Security Framework initialized
+[    8.706084] Yama: becoming mindful.
+[    8.760947] AppArmor: AppArmor initialized
+[    8.772586] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes)
+[    8.788664] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes)
+[    8.806715] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes)
+[    8.823415] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes)
+[    8.846644] Initializing cgroup subsys io
+[    8.861506] Initializing cgroup subsys memory
+[    8.902390] Initializing cgroup subsys devices
+[    8.909636] Initializing cgroup subsys freezer
+[    8.932708] Initializing cgroup subsys net_cls
+[    8.956776] Initializing cgroup subsys perf_event
+[    8.976139] Initializing cgroup subsys net_prio
+[    8.977467] Initializing cgroup subsys hugetlb
+[    8.984088] Initializing cgroup subsys pids
+[    8.992260] CPU: Physical Processor ID: 0
+[    9.008995] CPU: Processor Core ID: 0
+[    9.026925] mce: CPU supports 0 MCE banks
+[    9.029287] Last level iTLB entries: 4KB 1024, 2MB 1024, 4MB 1024
+[    9.037615] Last level dTLB entries: 4KB 1024, 2MB 1024, 4MB 1024, 1GB 4
+[    9.065882] Freeing SMP alternatives memory: 32K (ffffffff820b4000 - ffffffff820bc000)
+[    9.109951] ftrace: allocating 32007 entries in 126 pages
+[    9.180906] smpboot: Max logical packages: 1
+[    9.191502] smpboot: APIC(0) Converting physical 0 to logical package 0
+[    9.206754] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    9.328654] smpboot: CPU0: Intel(R) Core(TM) i5-4278U CPU @ 2.60GHz (family: 0x6, model: 0x45, stepping: 0x1)
+[    9.397419] Performance Events: unsupported p6 CPU model 69 no PMU driver, software events only.
+[    9.443482] KVM setup paravirtual spinlock
+[    9.445683] x86: Booting SMP configuration:
+[    9.480745] .... node  #0, CPUs:      #1
+[    9.481942] kvm-lock: cpu 1, msr 0:3ffe7041, secondary cpu clock
+[    9.578567] mce: CPU supports 0 MCE banks
+[    9.607843] x86: Booted up 1 node, 2 CPUs
+[    9.626825] smpboot: Total of 2 processors activated (10400.00 BogoMIPS)
+[    9.655152] devtmpfs: initialized
+[    9.662544] evm: security.selinux
+[    9.686767] evm: security.SMACK64
+[    9.695509] evm: security.SMACK64EXEC
+[    9.697626] evm: security.SMACK64TRANSMUTE
+[    9.712087] evm: security.SMACK64MMAP
+[    9.725100] evm: security.ima
+[    9.740754] evm: security.capability
+[    9.771358] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    9.811876] pinctrl core: initialized pinctrl subsystem
+[    9.813393] RTC time:  2:43:19, date: 10/16/16
+[    9.816713] NET: Registered protocol family 16
+[    9.837526] cpuidle: using governor ladder
+[    9.882005] cpuidle: using governor menu
+[    9.939076] PCCT header not found.
+[    9.977867] ACPI: bus type PCI registered
+[   10.020661] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[   10.029589] PCI: Using configuration type 1 for base access
+[   10.060656] ACPI: Added _OSI(Module Device)
+[   10.095722] ACPI: Added _OSI(Processor Device)
+[   10.106356] ACPI: Added _OSI(3.0 _SCP Extensions)
+[   10.107419] ACPI: Added _OSI(Processor Aggregator Device)
+[   10.114500] ACPI: Executed 1 blocks of module-level executable AML code
+[   10.120404] ACPI: Interpreter enabled
+[   10.137183] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S1_] (20150930/hwxface-580)
+[   10.169811] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20150930/hwxface-580)
+[   10.184416] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S3_] (20150930/hwxface-580)
+[   10.213682] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S4_] (20150930/hwxface-580)
+[   10.233845] ACPI: (supports S0 S5)
+[   10.244873] ACPI: Using IOAPIC for interrupt routing
+[   10.246977] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[   10.274615] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[   10.332729] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+[   10.341306] acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+[   10.360955] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[   10.365629] PCI host bridge to bus 0000:00
+[   10.386563] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[   10.440633] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[   10.488199] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[   10.596048] pci_bus 0000:00: root bus resource [mem 0x40000000-0xffdfffff window]
+[   10.648371] pci_bus 0000:00: root bus resource [bus 00-ff]
+[   10.673506] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[   10.763995] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[   10.779300] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[   10.794130] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[   10.866308] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 11) *0, disabled.
+[   10.932090] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 10 *11)
+[   10.981655] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 9 *10 11)
+[   11.015624] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 *9 10 11)
+[   11.083804] ACPI: Enabled 2 GPEs in block 00 to 07
+[   11.136238] vgaarb: setting as boot device: PCI:0000:00:02.0
+[   11.196281] vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+[   11.243840] vgaarb: loaded
+[   11.245188] vgaarb: bridge control possible 0000:00:02.0
+[   11.250992] SCSI subsystem initialized
+[   11.261716] ACPI: bus type USB registered
+[   11.270829] usbcore: registered new interface driver usbfs
+[   11.272836] usbcore: registered new interface driver hub
+[   11.279074] usbcore: registered new device driver usb
+[   11.318576] PCI: Using ACPI for IRQ routing
+[   11.357155] NetLabel: Initializing
+[   11.366009] NetLabel:  domain hash size = 128
+[   11.385156] NetLabel:  protocols = UNLABELED CIPSOv4
+[   11.393584] NetLabel:  unlabeled traffic allowed by default
+[   11.406299] amd_nb: Cannot enumerate AMD northbridges
+[   11.407911] clocksource: Switched to clocksource kvm-clock
+[   11.453430] AppArmor: AppArmor Filesystem Enabled
+[   11.460919] pnp: PnP ACPI init
+[  1.46342] pnpPnP ACPI: found 3 devices
+
+[   11.664572] clocksource: acp_p: mask: 0xffffff macycle: xfff, axdl_n: 085701024 ns
+[   12.168739] NET: Registered protocol family 2
+
+[   12.170524] TCP established hashtae entie 82 ordr:, 55 bytes)
+[   2.876]CP indha table entries: 8192 (order: 5, 131072 bytes)
+[ 1306748] T: Hash tales configure (taished 8192 bind 8192)
+[   13.693401] UDP hash table entries: 512 (orde 2, 16384 bytes)
+[  18267] UDP-Lite hash table entries: 5 (rdr:, 16384 bytes)
+[ 14.250752NE: Registered protocol family 1[  14.488811] pci 0000000.0: Limiting direct PCI/PCI transfrs
+   14.758924] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[[   14.832179] Trying to unpack rootfs image as initramfs...
+[   19046Fring initrd memory: 8240K (ffff8836800 fff8007e4000)
+[   17.676037] RAPL PMU detected, API unit is 2^-32 Joes 4 fixed counters 1073741824 m ol timer
+[   17.94633 hw unit of domain pp0-cor2^0 ous
+[   18.253781] hw unt  domain paag 2^-0oules
+
+[   18.606978] hw unit of domain dram 2^-0 Joules
+[   18.612819] hw unit of domain pp1-gpu 2^-0 Joules
+[   18.635502] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[   18.667144] Scanning for low memory corruption every 60 seconds
+[   18.679121] futex hash table entries: 512 (order: 3, 32768 bytes)
+[   18.691088] audit: initializing netlink subsys (disabled)
+[   18.694498] audit: type=2000 audit(1476585802.582:1): initialized
+[   18.704035] Initialise system trusted keyring
+[   18.718951] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+[   18.746880] zbud: loaded
+[   18.766118] VFS: Disk quotas dquot_6.6.0
+[   18.778716] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[   18.785178] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[   18.800440] fuse init (API version 7.23)
+[   18.814121] Key type big_key registered
+[   18.827393] Allocating IMA MOK and blacklist keyrings.
+[   18.832572] Key type asymmetric registered
+[   18.842671] Asymmetric key parser 'x509' registered
+[   18.858296] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[   18.861865] io scheduler noop registered
+[   18.873384] io scheduler deadline registered (default)
+[   18.881738] io scheduler cfq registered
+[   18.885212] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+[   18.913824] pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+[   18.927556] ACPI: AC Adapter [AC] (on-line)
+[   18.928778] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[   18.954396] ACPI: Power Button [PWRF]
+[   18.959034] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+[   19.093870] ACPI: Sleep Button [SLPF]
+[   19.146872] GHES: HEST is not enabled!
+[   19.163784] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[   19.195954] 00:02: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[   19.217814] Linux agpgart interface v0.103
+[   19.233756] brd: module loaded
+[   19.257868] loop: module loaded
+[   19.276094] scsi host0: ata_piix
+[   19.285645] scsi host1: ata_piix
+[   19.289337] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+[   19.292511] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+[   19.296339] libphy: Fixed MDIO Bus: probed
+[   19.309431] tun: Universal TUN/TAP device driver, 1.6
+[   19.333514] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[   19.355686] PPP generic driver version 2.4.2
+[   19.373670] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[   19.395231] ehci-pci: EHCI PCI platform driver
+[   19.396723] ehci-platform: EHCI generic platform driver
+[   19.409971] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[   19.426101] ohci-pci: OHCI PCI platform driver
+[   19.448705] ohci-platform: OHCI generic platform driver
+[   19.460425] uhci_hcd: USB Universal Host Controller Interface driver
+[   19.468211] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+[   19.481144] serio: i8042 KBD port at 0x60,0x64 irq 1
+[   19.509384] serio: i8042 AUX port at 0x60,0x64 irq 12
+[   19.523128] mousedev: PS/2 mouse device common for all mice
+[   19.531557] rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
+[   19.561016] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+[   19.608104] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+[   19.616650] i2c /dev entries driver
+[   19.619423] device-mapper: uevent: version 1.0.3
+[   19.641718] device-mapper: ioctl: 4.34.0-ioctl (2015-10-28) initialised: dm-devel@redhat.com
+[   19.672182] ledtrig-cpu: registered to indicate activity on CPUs
+[   19.672353] tsc: Refined TSC clocksource calibration: 2598.192 MHz
+[   19.672356] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x25738ff9d5a, max_idle_ns: 440795238058 ns
+[   19.816383] NET: Registered protocol family 10
+[   19.824005] NET: Registered protocol family 17
+[   19.849090] Key type dns_resolver registered
+[   19.867046] microcode: CPU0 sig=0x40651, pf=0x40, revision=0x0
+[   19.870036] microcode: CPU1 sig=0x40651, pf=0x40, revision=0x0
+[   19.889773] microcode: Microcode Update Driver: v2.01 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+[   19.923750] registered taskstats version 1
+[   19.936276] Loading compiled-in X.509 certificates
+[   19.939114] Loaded X.509 cert 'Build time autogenerated kernel key: d76179dc6bbadd817ec29258d181eadabda602cb'
+[   19.998932] zswap: loaded using pool lzo/zbud
+[   20.006547] Key type trusted registered
+[   20.014653] Key type encrypted registered
+[   20.030006] AppArmor: AppArmor sha1 policy hashing enabled
+[   20.049190] ima: No TPM chip found, activating TPM-bypass!
+[   20.078117] evm: HMAC attrs: 0x1
+[   20.087015]   Magic number: 4:121:713
+[   20.096369] rtc_cmos rtc_cmos: setting system clock to 2016-10-16 02:43:29 UTC (1476585809)
+[   20.123253] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+[   20.130991] EDD information not available.
+[   20.146757] Freeing unused kernel memory: 1480K (ffffffff81f42000 - ffffffff820b4000)
+[   20.153918] Write protecting the kernel read-only data: 14336k
+[   20.191244] Freeing unused kernel memory: 1820K (ffff880001839000 - ffff880001a00000)
+[   20.209385] Freeing unused kernel memory: 152K (ffff880001dda000 - ffff880001e00000)
+Loading, please wait...
+starting version[   20.251762] random: systemd-udevd: uninitialized urandom read (16 bytes read, 3 bits of entropy available)
+ 229
+[   20.253210] random: udevadm: uninitialized urandom read (16 bytes read, 3 bits of entropy available)
+[   20.253257] random: udevadm: uninitialized urandom read (16 bytes read, 3 bits of entropy available)
+[   20.253491] random: udevadm: uninitialized urandom read (16 bytes read, 3 bits of entropy available)
+[   20.253630] random: udevadm: uninitialized urandom read (16 bytes read, 3 bits of entropy available)
+[   20.253686] random: udevadm: uninitialized urandom read (16 bytes read, 3 bits of entropy available)
+[   20.253739] random: udevadm: uninitialized urandom read (16 bytes read, 3 bits of entropy available)
+[   20.253863] random: udevadm: uninitialized urandom read (16 bytes read, 3 bits of entropy available)
+[   20.253917] random: udevadm: uninitialized urandom read (16 bytes read, 3 bits of entropy available)
+[   20.253968] random: udevadm: uninitialized urandom read (16 bytes read, 3 bits of entropy available)
+[   20.918475] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+[   21.037736] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[   21.090200] Fusion MPT base driver 3.04.20
+[   21.103336] Copyright (c) 1999-2008 LSI Corporation
+[   21.130823] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+[   21.188909] AVX version of gcm_enc/dec engaged.
+[   21.270036] AES CTR mode by8 optimization enabled
+[   21.277125] Fusion MPT SPI Host driver 3.04.20
+[   21.742849] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 02:3b:10:fe:82:8d
+[   21.763706] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+[   22.475545] e1000 0000:00:08.0 eth1: (PCI:33MHz:32-bit) 08:00:27:27:9e:ec
+[   22.481806] e1000 0000:00:08.0 eth1: Intel(R) PRO/1000 Network Connection
+[   22.495424] e1000 0000:00:03.0 enp0s3: renamed from eth0
+[   22.529517] mptbase: ioc0: Initiating bringup
+[   22.584958] e1000 0000:00:08.0 enp0s8: renamed from eth1
+[   22.676321] ioc0: LSI53C1030 A0: Capabilities={Initiator}
+[   22.892220] scsi host2: ioc0: LSI53C1030 A0, FwRev=00000000h, Ports=1, MaxQ=256, IRQ=20
+[   23.097387] scsi 2:0:0:0: Direct-Access     VBOX     HARDDISK         1.0  PQ: 0 ANSI: 5
+[   24.015993] scsi target2:0:0: Beginning Domain Validation
+[   24.075325] floppy0: no floppy controllers found
+[   24.099287] scsi target2:0:0: Domain Validation skipping write tests
+[   24.161389] scsi target2:0:0: Ending Domain Validation
+[   24.213099] scsi target2:0:0: asynchronous
+[   24.246594] scsi 2:0:1:0: Direct-Access     VBOX     HARDDISK         1.0  PQ: 0 ANSI: 5
+[   24.326114] scsi target2:0:1: Beginning Domain Validation
+[   24.392379] scsi target2:0:1: Domain Validation skipping write tests
+[   24.430388] scsi target2:0:1: Ending Domain Validation
+[   24.459160] scsi target2:0:1: asynchronous
+[   24.511562] sd 2:0:0:0: [sda] 20971520 512-byte logical blocks: (10.7 GB/10.0 GiB)
+[   24.522787] sd 2:0:0:0: Attached scsi generic sg0 type 0
+[   24.534463] sd 2:0:0:0: [sda] Write Protect is off
+[   24.537943] sd 2:0:1:0: [sdb] 20480 512-byte logical blocks: (10.5 MB/10.0 MiB)
+[   24.538291] sd 2:0:1:0: [sdb] Write Protect is off
+[   24.538469] sd 2:0:1:0: [sdb] Incomplete mode parameter data
+[   24.538471] sd 2:0:1:0: [sdb] Assuming drive cache: write through
+[   24.600512] sd 2:0:1:0: Attached scsi generic sg1 type 0
+[   24.602960] sd 2:0:1:0: [sdb] Attached SCSI disk
+[   24.665536] sd 2:0:0:0: [sda] Incomplete mode parameter data
+[   24.680661] sd 2:0:0:0: [sda] Assuming drive cache: write through
+[   24.725676]  sda: sda1
+[   24.728561] sd 2:0:0:0: [sda] Attached SCSI disk
+Begin: Loading essential drivers ... [   26.475787] md: linear personality registered for level -1
+[   26.496993] md: multipath personality registered for level -4
+[   26.525380] md: raid0 personality registered for level 0
+[   26.560524] md: raid1 personality registered for level 1
+[   26.636127] raid6: sse2x1   gen()  6744 MB/s
+[   26.736037] raid6: sse2x1   xor()  4813 MB/s
+[   26.844223] raid6: sse2x2   gen()  9393 MB/s
+[   26.932064] raid6: sse2x2   xor()  5802 MB/s
+[   27.012112] raid6: sse2x4   gen()  8284 MB/s
+[   27.116060] raid6: sse2x4   xor()  4210 MB/s
+[   27.132680] raid6: using algorithm sse2x2 gen() 9393 MB/s
+[   27.176330] raid6: .... xor() 5802 MB/s, rmw enabled
+[   27.183875] raid6: using ssse3x2 recovery algorithm
+[   27.207498] xor: automatically using best checksumming function:
+[   27.248077]    avx       : 14697.000 MB/sec
+[   27.286515] async_tx: api initialized (async)
+[   27.309554] md: raid6 personality registered for level 6
+[   27.325973] md: raid5 personality registered for level 5
+[   27.350070] md: raid4 personality registered for level 4
+[   27.410307] md: raid10 personality registered for level 10
+done.
+Begin: Running /scripts/init-premount ... done.
+Begin: Mounting root file system ... Begin: Running /scripts/local-top ... done.
+Begin: Running /scripts/local-premount ... [   27.468204] Btrfs loaded
+Scanning for Btrfs filesystems
+done.
+Warning: fsck not present, so sk[   27.599178] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+ipping root file system
+done.
+Begin: Running /scripts/local-bottom ... done.
+Begin: Running /scripts/init-bottom ... Warning: overlayroot: debug is busted
+done.
+[   27.902088] systemd[1]: systemd 229 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN)
+[   27.928565] systemd[1]: Detected virtualization oracle.
+[   27.956010] systemd[1]: Detected architecture x86-64.
+
+Welcome to [1mUbuntu 16.04.1 LTS[0m!
+
+[   28.017696] systemd[1]: Set hostname to <ubuntu>.
+[   28.040613] systemd[1]: Initializing machine ID from random generator.
+[   28.050548] systemd[1]: Installed transient /etc/machine-id file.
+[   28.441620] systemd[1]: Listening on udev Kernel Socket.
+[[0;32m  OK  [0m] Listening on udev Kernel Socket.
+[   28.479266] systemd[1]: Created slice User and Session Slice.
+[[0;32m  OK  [0m] Created slice User and Session Slice.
+[   28.527445] systemd[1]: Listening on udev Control Socket.
+[[0;32m  OK  [0m] Listening on udev Control Socket.
+[   28.553810] systemd[1]: Listening on Journal Socket (/dev/log).
+[[0;32m  OK  [0m] Listening on Journal Socket (/dev/log).
+[   28.613875] systemd[1]: Listening on Journal Socket.
+[[0;32m  OK  [0m] Listening on Journal Socket.
+[   28.674711] systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+[[0;32m  OK  [0m] Listening on /dev/initctl Compatibility Named Pipe.
+[   28.718940] systemd[1]: Listening on LVM2 poll daemon socket.
+[[0;32m  OK  [0m] Listening on LVM2 poll daemon socket.
+[   28.764630] systemd[1]: Reached target Encrypted Volumes.
+[[0;32m  OK  [0m] Reached target Encrypted Volumes.
+[   28.787805] systemd[1]: Reached target User and Group Name Lookups.
+[[0;32m  OK  [0m] Reached target User and Group Name Lookups.
+[   28.823063] systemd[1]: Listening on Syslog Socket.
+[[0;32m  OK  [0m] Listening on Syslog Socket.
+[   28.846616] systemd[1]: Listening on Journal Audit Socket.
+[[0;32m  OK  [0m] Listening on Journal Audit Socket.
+[   28.904680] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[[0;32m  OK  [0m] Started Forward Password Requests to Wall Directory Watch.
+[   28.948262] systemd[1]: Listening on LVM2 metadata daemon socket.
+[[0;32m  OK  [0m] Listening on LVM2 metadata daemon socket.
+[   28.960755] systemd[1]: Reached target Swap.
+[[0;32m  OK  [0m] Reached target Swap.
+[   28.973864] systemd[1]: Created slice System Slice.
+[[0;32m  OK  [0m] Created slice System Slice.
+[   29.018097] systemd[1]: Starting Remount Root and Kernel File Systems...
+[   29.024424] EXT4-fs (sda1): re-mounted. Opts: (null)
+         Starting Remount Root and Kernel File Systems...
+[   29.062711] systemd[1]: Mounting Huge Pages File System...
+         Mounting Huge Pages File System...
+[   29.139166] systemd[1]: Starting Set console keymap...
+         Starting Set console keymap...
+[   29.161601] systemd[1]: Reached target Slices.
+[[0;32m  OK  [0m] Reached targ[   29.167543] random: nonblocking pool is initialized
+et Slices.
+[   29.217740] systemd[1]: Starting Load Kernel Modules...
+         Starting Load Kernel Mo[   29.261736] Loading iSCSI transport class v2.0-870.
+dules...
+[   29.289520] systemd[1]: Starting Journal Service...
+[   29.317223] iscsi: registered transport (tcp)
+         Starting Journal Service...
+[   29.380336] systemd[1]: Mounting Debug File System...
+         Mounting Debug File System...
+[   29.389198] iscsi: registered transport (iser)
+[   29.389698] systemd[1]: Starting Nameserver information manager...
+         Starting Nameserver information manager...
+[   29.466732] systemd[1]: Starting Create list of required static device nodes for the current kernel...
+         Starting Create list of required st... nodes for the current kernel...
+[   29.502394] systemd[1]: Starting Uncomplicated firewall...
+         Starting Uncomplicated firewall...
+[   29.517089] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[[0;32m  OK  [0m] Created slice system-serial\x2dgetty.slice.
+[   29.669123] systemd[1]: Listening on Device-mappeevntdaon FIFOs.
+
+[[0;32m  OK  [0m] Listening on Device-mapper event daemon FIFOs.
+[   29.950507] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+         Starting Monitoring of LVM2 mirrors... dmeventd or progress polling...
+[   30.031264] systemd[1]: Mounting POSIX Message Queue File System...
+         Mounting POSIX Message Queue File System...
+[   30.059846] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[[0;32m  OK  [0m] Set up automount Arbitrary Executab...ats File System Automount Point.
+[   30.189455] systemd[1]: Mounted Debug File System.
+[[0;32m  OK  [0m] Mounted Debug File System.
+[   30.253512] systemd[1]: Mounted Huge Pages File System.
+[[0;32m  OK  [0m] Mounted Huge Pages File System.
+[   30.297028] systemd[1]: Mounted POSIX Message Queue File System.
+[[0;32m  OK  [0m] Mounted POSIX Message Queue File System.
+[   30.320736] systemd[1]: Started Journal Service.
+[[0;32m  OK  [0m] Started Journal Service.
+[[0;32m  OK  [0m] Started Remount Root and Kernel File Systems.
+[[0;32m  OK  [0m] Started Set console keymap.
+[[0;32m  OK  [0m] Started Load Kernel Modules.
+[[0;32m  OK  [0m] Started Create list of required sta...ce nodes for the current kernel.
+[[0;32m  OK  [0m] Started Uncomplicated firewall.
+[[0;32m  OK  [0m] Started Nameserver information manager.
+[[0;32m  OK  [0m] Started LVM2 metadata daemon.
+         Starting Create Static Device Nodes in /dev...
+         Mounting FUSE Control File System...
+         Starting Apply Kernel Variables...
+         Starting Load/Save Random Seed...
+         Starting udev Coldplug all Devices...
+         Starting Flush Journal to Persistent Storage...
+[[0;32m  OK  [0m] Mounted FUSE Control File System.
+[[0;32m  OK  [0m] Started Monitoring of LVM2 mirrors,...ng dmeventd or progress polling.
+[[0;32m  OK  [0m] Started Create Static Device Nodes in /dev.
+[[0;32m  OK  [0m] Started Apply Kernel Variables.
+[[0;32m  OK  [0m] Started Load/Save Random Seed.
+[[0;32m  OK  [0m] Started udev Coldplug all Devices.
+         Starting udev Kernel Device Manager...
+[[0;32m  OK  [0m] Started Flush Journal to Persistent Storage.
+[[0;32m  OK  [0m] Started udev Kernel Device Manager.
+[[0;32m  OK  [0m] Reached target Local File Systems (Pre).
+[[0;32m  OK  [0m] Reached target Local File Systems.
+         Starting Set console font and keymap...
+         Starting Tell Plymouth To Write Out Runtime Data...
+         Starting LSB: AppArmor initialization...
+         Starting Run snappy firstboot setup...
+         Starting Commit a transient machine-id on disk...
+         Starting Initial cloud-init job (pre-networking)...
+[[0;32m  OK  [0m] Started Dispatch Password Requests to Console Directory Watch.
+         Starting Create Volatile Files and Directories...
+[[0;32m  OK  [0m] Started Tell Plymouth To Write Out Runtime Data.
+[[0;32m  OK  [0m] Started Run snappy firstboot setup.
+[[0;32m  OK  [0m] Started Commit a transient machine-id on disk.
+[[0;32m  OK  [0m] Started Create Volatile Files and Directories.
+[[0;32m  OK  [0m] Started Set console font and keymap.
+[[0;32m  OK  [0m] Found device /dev/ttyS0.
+[[0;32m  OK  [0m] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+[[0;32m  OK  [0m] Created slice system-getty.slice.
+[[0;32m  OK  [0m] Reached target System Time Synchronized.
+         Starting Update UTMP about System Boot/Shutdown...
+[[0;32m  OK  [0m] Started Update UTMP about System Boot/Shutdown.
+[[0;32m  OK  [0m] Started LSB: AppArmor initialization.
+[[0;32m  OK  [0m] Reached target System Initialization.
+[[0;32m  OK  [0m] Started ACPI Events Check.
+         Starting Socket activation for snappy daemon.
+[[0;32m  OK  [0m] Started Daily Cleanup of Temporary Directories.
+         Starting LXD - unix socket.
+[[0;32m  OK  [0m] Started Timer to automatically refresh installed snaps.
+[[0;32m  OK  [0m] Listening on D-Bus System Message Bus Socket.
+[[0;32m  OK  [0m] Listening on ACPID Listen Socket.
+[[0;32m  OK  [0m] Started Trigger resolvconf update for networkd DNS.
+[[0;32m  OK  [0m] Reached target Paths.
+[[0;32m  OK  [0m] Listening on UUID daemon activation socket.
+[[0;32m  OK  [0m] Started Daily apt activities.
+[[0;32m  OK  [0m] Reached target Timers.
+[[0;32m  OK  [0m] Listening on Socket activation for snappy daemon.
+[[0;32m  OK  [0m] Listening on LXD - unix socket.
+[[0;32m  OK  [0m] Reached target Sockets.
+[[0;32m  OK  [0m] Reached target Basic System.
+         Starting Login Service...
+[[0;32m  OK  [0m] Started D-Bus System Message Bus.
+[[0;32m  OK  [0m] Started Deferred execution scheduler.
+         Starting LSB: Record successful boot for GRUB...
+[[0;32m  OK  [0m] Started Regular background program processing daemon.
+         Starting LXD - container startup/shutdown...
+         Starting System Logging Service...
+[[0;32m  OK  [0m] Started FUSE filesystem for LXC.
+         Starting Accounts Service...
+         Starting LSB: MD monitoring daemon...
+[   25.186328] cloud-init[703]: Cloud-init v. 0.7.8 running 'init-local' at Sun, 16 Oct 2016 02:43:44 +0000. Up 24.31 seconds.
+[[0;32m  OK  [0m] Started ACPI event daemon.
+[[0;32m  OK  [0m] Started Snappy daemon.
+[[0;32m  OK  [0m] Started System Logging Service.
+[[0;32m  OK  [0m] Started Initial cloud-init job (pre-networking).
+[[0;32m  OK  [0m] Started Login Service.
+[[0;32m  OK  [0m] Started LSB: Record successful boot for GRUB.
+         Starting Authenticate and Authorize Users to Run Privileged Tasks...
+[[0;32m  OK  [0m] Reached target Network (Pre).
+         Starting Raise network interfaces...
+[[0;32m  OK  [0m] Started LXD - container startup/shutdown.
+[[0;32m  OK  [0m] Started LSB: MD monitoring daemon.
+[[0;32m  OK  [0m] Started Authenticate and Authorize Users to Run Privileged Tasks.
+[[0;32m  OK  [0m] Started Accounts Service.
+[[0;32m  OK  [0m] Started Raise network interfaces.
+[[0;32m  OK  [0m] Reached target Network.
+         Starting Initial cloud-init job (metadata service crawler)...
+[   28.307150] cloud-init[1026]: Cloud-init v. 0.7.8 running 'init' at Sun, 16 Oct 2016 02:43:46 +0000. Up 26.87 seconds.
+[   28.401570] cloud-init[1026]: ci-info: ++++++++++++++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++++++++++++
+[[0;32m  OK  [0m] Started Initial cloud-init job (metadata service crawler).
+[   28.456516] cloud-init[1026]: ci-info: +--------+-------+----------------------------+---------------+-------+-------------------+
+[   28.615969] [cloud-init[0;32m  OK  [0m[1026]: ] ci-info: | Device |   Up  |          Address           |      Mask     | Scope |     Hw-Address    |Reached target Network is Online.
+
+[   28.616645] cloud-init[1026]: ci-info: +--------+-------+----------------------------+---------------+-------+-------------------+
+[   28.792631]          cloud-initStarting Pollinate to seed the pseudo random number generator...[1026]: 
+ci-info: |   lo   |  True |         127.0.0.1          |   255.0.0.0   |   .   |         .         |
+[   28.905559]          cloud-initStarting /etc/rc.local Compatibility...[1026]: 
+ci-info: |   lo   |  True |          ::1/128           |       .       |  host |         .         |
+[   29.044639]          cloud-initStarting iSCSI initiator daemon (iscsid)...[1026]: 
+ci-info: | enp0s8 | False |             .              |       .       |   .   | 08:00:27:27:9e:ec |
+[[0;32m  OK  [0m] Reached target Cloud-config availability.
+[   29.045313] cloud-init[1026]: ci-info: | enp0s3 |  True |         10.0.2.15          | 255.255.255.0 |   .   | 02:3b:10:fe:82:8d |
+         Starting Apply the settings specified in cloud-config...
+[   29.236538] [cloud-init[0;32m  OK  [0m[1026]: ] ci-info: | enp0s3 |  True | fe80::3b:10ff:fefe:828d/64 |       .       |  link | 02:3b:10:fe:82:8d |Started /etc/rc.local Compatibility.
+
+[   29.286040] cloud-init[1026]: ci-info: +--------+-------+----------------------------+---------------+-------+-------------------+
+[   29.535144] cloud-init[1026]: ci-info: +++++++++++++++++++++++++++Route IPv4 info++++++++++++++++++++++++++++
+[   29.535619] cloud-init[1026]: ci-info: +-------+-------------+----------+---------------+-----------+-------+
+[[0;32m  OK  [0m] Started iSCSI initiator daemon (iscsid).
+[   29.535944] cloud-init[1026]: ci-info: | Route | Destination | Gateway  |    Genmask    | Interface | Flags |
+         [   29.976651] Starting Login to default iSCSI targets...cloud-init
+[1026]: ci-info: +-------+-------------+----------+---------------+-----------+-------+
+[   29.977243] cloud-init[1026]: ci-info: |   0   |   0.0.0.0   | 10.0.2.2 |    0.0.0.0    |   enp0s3  |   UG  |
+[   30.152930] cloud-init[1026]: ci-info: |   1   |   10.0.2.0  | 0.0.0.0  | 255.255.255.0 |   enp0s3  |   U   |
+[   30.153243] cloud-init[1026]: ci-info: +-------+-------------+----------+---------------+-----------+-------+
+[[0;32m  OK  [0m] Started Pollinate to seed the pseudo random number generator.
+[   30.153552] cloud-init[1026]: Generating public/private rsa key pair.
+[   30.296605] cloud-init[1026]: Your identification has been saved in /etc/ssh/ssh_host_rsa_key.
+[   30.369690] cloud-init[1026]: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.
+         Starting OpenBSD Secure Shell server...
+[   30.370044] cloud-init[1026]: The key fingerprint is:
+[   30.517295] cloud-init[1026]: SHA256:fhzaZUV/wFhGk/niH6rTcJHHWpgneEgA2I9H1Lw+qzI root@ubuntu-xenial
+[   30.517553] cloud-init[1026]: The key's randomart image is:
+[   30.517622] cloud-init[1026]: +---[RSA 2048]----+
+[   30.517682] cloud-init[1026]: |      o.oo+  =Bo |
+[   30.517742] cloud-init[1026]: |     . . . +.o++ |
+[   30.517946] cloud-init[1026]: |        + . + *.o|
+[[0;32m  OK  [0m] Started Login to default iSCSI targets.
+[   30.519020] cloud-init[1026]: |       . o + O.=o|
+[   30.677293] cloud-init[1026]: |        S o +.B. |
+[   30.677656] cloud-init[1026]: |       . + B o.. |
+[[0;32m  OK  [0m] Started OpenBSD Secure Shell server.
+[   30.677804] cloud-init[1026]: |        o + * ...|
+[   30.727184] cloud-init[1026]: |       E . o o  .|
+[[0;32m  OK  [0m] Reached target Remote File Systems (Pre).
+[[0;32m  OK  [0m] Reached target Remote File Systems.
+[   30.745532] cloud-init[1026]: |        o...o    |
+[   30.762035] cloud-init[1026]: +----[SHA256]-----+         Starting Permit User Sessions...
+
+[   30.769041]          Starting LSB: automatic crash report generation...
+         Starting LSB: VirtualBox Linux Additions...
+         Starting LSB: Set the CPU Frequency Scaling governor to "ondemand"...
+         Starting LSB: daemon to balance interrupts for SMP systems...
+[[0;32m  OK  [0m] Started Permit User Sessions.
+cloud-init[1026]: Generating public/private dsa key pair.
+[   30.817000] cloud-init[1026]: Your identification has been saved in /etc/ssh/ssh_host_dsa_key.
+         Starting Hold until boot process finishes up...
+         Starting Terminate Plymouth Boot Screen...
+[[0;32m  OK  [0m] Started Hold until boot process finishes up.
+[   30.838874] cloud-init[1026]: Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub.
+[[0;32m  OK  [0m] Started Terminate Plymouth Boot Screen.
+[[0;32m  OK  [0m] Started LSB: Set the CPU Frequency Scaling governor to "ondemand".
+[   30.893082] cloud-init[1026]: The key fingerprint is:
+[[0;32m  OK  [0m] Started LSB: daemon to balance interrupts for SMP systems.
+[[0;32m  OK  [0m] Started LSB: automatic crash report generation.
+[   30.991488] cloud-init[1026]: SHA256:IDp3JkBmYD5QQAWU6gmwwGMLoK0MRNdGgoS2Zmud7tE root@ubuntu-xenial
+[[0;32m  OK  [0m] Started Serial Getty on ttyS0.
+[   31.089226] cloud-init[1026]: The key's randomart image is:
+[   31.152946]          cloud-initStarting Set console scheme...[1026]: 
++---[DSA 1024]----+
+[[0;32m  OK  [0m] Started Getty on tty1.
+[   31.188887] cloud-init[1026]: |&%X+o.           |
+[   31.219754] [cloud-init[0;32m  OK  [0m[1026]: ] |@%. .o           |Reached target Login Prompts.
+
+[   31.220776] [[0;32m  OK  [0m] Started LSB: VirtualBox Linux Additions.
+cloud-init[1026]: |X+* o .          |
+[   31.276251] cloud-init[[0;32m  OK  [0m] Started Set console scheme.
+[1026]: |**.o . .         |
+[   31.279242] cloud-init[1026]: |*.* + o S        |
+[   31.281855] cloud-init[[1026]: [0;32m  OK  [0m| = =.+           |] 
+Reached target Multi-User System.
+[   31.288962] cloud-init[1026]: |. .. E           |
+[   31.299349]          Starting Notify bootloader that boot was successful...
+cloud-init[1026]: |   ..            |
+[   31.356442] [[0;32m  OK  [0m] Reached target Graphical Interface.
+cloud-init[1026]: |  ..             |
+[   31.361460] cloud-init[1026]: +----[SHA256]-----+
+[   31.380529]          Starting Update UTMP about System Runlevel Changes...
+[[0;32m  OK  [0m] Started Notify bootloader that boot was successful.
+cloud-init[1026]: Generating public/private ecdsa key pair.
+[   31.403888] cloud-init[[0;32m  OK  [0m] Started Update UTMP about System Runlevel Changes.
+[1026]: Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key.
+[   31.444394] cloud-init[1026]: Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub.
+[   31.477075] cloud-init[1026]: The key fingerprint is:
+[   31.502518] cloud-init[1026]: SHA256:EqB9SV4zMupt3MNgGtIvo90O/UY8ecyeyyWwrG6v9Fg root@ubuntu-xenial
+[   31.546265] cloud-init[1026]: The key's randomart image is:
+[   31.568869] cloud-init[1026]: +---[ECDSA 256]---+
+[   31.612865] cloud-init[1026]: |    . + +        |
+[   31.660682] cloud-init[1026]: |   + = = o       |
+[   31.693471] cloud-init[1026]: |  o = B          |
+[   31.697872] cloud-init[1026]: |   o O =         |
+[   31.703159] cloud-init[1026]: |    = *.S+       |
+[   31.725041] cloud-init[1026]: |   o * o=++      |
+[   31.741222] cloud-init[1026]: |  . o +.E+...    |
+[   31.779407] cloud-init[1026]: |     +.*..oo     |
+[   31.792748] cloud-init[1026]: |     o*++ o.     |
+[   31.825769] cloud-init[1026]: +----[SHA256]-----+
+[   31.835626] cloud-init[1026]: Generating public/private ed25519 key pair.
+[   31.876957] cloud-init[1026]: Your identification has been saved in /etc/ssh/ssh_host_ed25519_key.
+[   31.907512] cloud-init[1026]: Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub.
+[   31.922505] cloud-init[1026]: The key fingerprint is:
+[   31.936756] cloud-init[1026]: SHA256:QVNLdaVQHcfcGWi+x0DFmcHeX3UwBtmI6Tukqr385p0 root@ubuntu-xenial
+[   31.985162] cloud-init[1026]: The key's randomart image is:
+[   32.032711] cloud-init[1026]: +--[ED25519 256]--+
+[   32.088915] cloud-init[1026]: |        o.o++*@@@|
+[   32.132834] cloud-init[1026]: |       . oo.oB.OO|
+[   32.144865] cloud-init[1026]: |        ... + o +|
+[   32.154730] cloud-init[1026]: |         .o  o .o|
+[   32.175609] cloud-init[1026]: |        So .  + o|
+[   32.187280] cloud-init[1026]: |        . o  . o.|
+[   32.194928] cloud-init[1026]: |       .   .  .  |
+[   32.208731] cloud-init[1026]: |     o. .. .     |
+[   32.213847] cloud-init[1026]: |    ..+=o E      |
+[   32.225401] cloud-init[1026]: +----[SHA256]-----+
+[   32.237796] cloud-init[1153]: Generating locales (this might take a while)...
+[   32.251859] cloud-init[1153]:   en_US.UTF-8... done
+[   32.281310] cloud-init[1153]: Generation complete.
+         Stopping OpenBSD Secure Shell server...
+[[0;32m  OK  [0m] Stopped OpenBSD Secure Shell server.
+         Starting OpenBSD Secure Shell server...
+[[0;32m  OK  [0m] Started OpenBSD Secure Shell server.
+[   33.151164] cloud-init[1153]: Cloud-init v. 0.7.8 running 'modules:config' at Sun, 16 Oct 2016 02:43:49 +0000. Up 29.76 seconds.
+[[0;32m  OK  [0m] Started Apply the settings specified in cloud-config.
+         Starting Execute cloud user/final scripts...
+[[0;32m  OK  [0m] Created slice User Slice of ubuntu.
+         Starting User Manager for UID 1000...
+[[0;32m  OK  [0m] Started Session 1 of user ubuntu.
+[[0;32m  OK  [0m] Started User Manager for UID 1000.
+ci-info: no authorized ssh keys fingerprints found for user ubuntu.
+<14>Oct 16 02:43:54 ec2: 
+<14>Oct 16 02:43:54 ec2: #############################################################
+<14>Oct 16 02:43:54 ec2: -----BEGIN SSH HOST KEY FINGERPRINTS-----
+<14>Oct 16 02:43:54 ec2: 1024 SHA256:IDp3JkBmYD5QQAWU6gmwwGMLoK0MRNdGgoS2Zmud7tE root@ubuntu-xenial (DSA)
+<14>Oct 16 02:43:54 ec2: 256 SHA256:EqB9SV4zMupt3MNgGtIvo90O/UY8ecyeyyWwrG6v9Fg root@ubuntu-xenial (ECDSA)
+<14>Oct 16 02:43:54 ec2: 256 SHA256:QVNLdaVQHcfcGWi+x0DFmcHeX3UwBtmI6Tukqr385p0 root@ubuntu-xenial (ED25519)
+<14>Oct 16 02:43:54 ec2: 2048 SHA256:fhzaZUV/wFhGk/niH6rTcJHHWpgneEgA2I9H1Lw+qzI root@ubuntu-xenial (RSA)
+<14>Oct 16 02:43:54 ec2: -----END SSH HOST KEY FINGERPRINTS-----
+<14>Oct 16 02:43:54 ec2: #############################################################
+-----BEGIN SSH HOST KEY KEYS-----
+ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJS5Eo77+0kYkkrjk71xO0qDvHVvlF2qkdhzYwSROS4pg4WNhNxAS7+oCKcHVzXmWcgZWLR/itqCtbn+4AG8SJ4= root@ubuntu-xenial
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJFyY1v3Ut6XhzhtFZCmv03aQnELYOzlp9PMr6fJUTl2 root@ubuntu-xenial
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVUWNQ7hjDl+Aea9LJ6O4zL6mSXYho0uifDJ+rfrshGhpDTIFf30qJSw1gtNiUXEI7qYsaj8D1kOqrQpRJEPL2cWyfyyAdVPPSGZTd9XPGu36oh8VYOjsDXRonJeDQ9nIYvVuA8iF/ACWTermpxLJv7/c/ACMazbwiLDceaNXkbRxalLlwhisA3rEDhKV0/COhvT51Bcnqt4NdHgWZ8WtjzJjEu0ao5dhSjESalJPNUQ9f8m9yTe6Mb5VoIVrA7RfIw4ecoqKkPn+7I8Mvd6ZHSEYvXBfBKcjedKa5tuOBRSfWFB9q0o38P4Xj3HJKW8ghLQwjSGrShQTiufvVvnLr root@ubuntu-xenial
+-----END SSH HOST KEY KEYS-----
+[   35.367598] cloud-init[1326]: Cloud-init v. 0.7.8 running 'modules:final' at Sun, 16 Oct 2016 02:43:54 +0000. Up 34.17 seconds.
+[   35.420829] cloud-init[1326]: ci-info: no authorized ssh keys fingerprints found for user ubuntu.
+[   35.448527] cloud-init[1326]: Cloud-init v. 0.7.8 finished at Sun, 16 Oct 2016 02:43:55 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 35.33 seconds
+[[0;32m  OK  [0m] Started Execute cloud user/final scripts.
+[[0;32m  OK  [0m] Reached target Cloud-init target.
+
+Ubuntu 16.04.1 LTS ubuntu-xenial ttyS0
+
+ubuntu-xenial login: [ 1377.213413] sd 2:0:0:0: [sda] tag#3 Medium access timeout failure. Offlining disk!
+[ 1388.317732] blk_update_request: I/O error, dev sda, sector 4691872
+[ 1388.341046] Buffer I/O error on device sda1, logical block 586228
+[ 1388.356642] Buffer I/O error on device sda1, logical block 586229
+[ 1388.365211] Buffer I/O error on device sda1, logical block 586230
+[ 1388.368915] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.383954] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.385177] Buffer I/O error on device sda1, logical block 608014
+[ 1388.392257] Buffer I/O error on device sda1, logical block 608015
+[ 1388.393874] Buffer I/O error on device sda1, logical block 608016
+[ 1388.402227] Buffer I/O error on device sda1, logical block 608017
+[ 1388.431879] Buffer I/O error on device sda1, logical block 608018
+[ 1388.438848] Buffer I/O error on device sda1, logical block 608019
+[ 1388.443941] Buffer I/O error on device sda1, logical block 608020
+[ 1388.451705] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.458225] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.467714] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.480394] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.498182] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.526184] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.538311] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.566006] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.568890] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.572840] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.574115] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.591915] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.593142] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.600185] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.606795] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.624410] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.643269] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.653160] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.689211] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.709386] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.730074] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.736570] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.748458] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.755753] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.756770] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.807834] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.833823] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.841420] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.856622] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.892175] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.942302] sd 2:0:0:0: rejecting I/O to offline device
+[ 1388.956044] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.000784] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.046460] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.066850] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.072203] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.074095] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.086599] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.105175] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.132312] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.175247] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.253588] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.269057] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.282384] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.286405] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.289080] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.299994] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.302042] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.324954] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.330428] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.361826] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.370380] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.386586] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.395123] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.403217] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.410980] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.417839] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.424523] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.431990] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.449759] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.468025] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.476770] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.496886] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.513017] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.533101] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.592784] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.655439] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.673656] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.681719] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.720126] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.739145] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.758056] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.782147] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.820557] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.863455] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.900451] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.915413] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.917385] sd 2:0:0:0: rejecting I/O to offline device
+[ 1389.955668] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.007921] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.052354] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.101543] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.167263] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.206200] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.239238] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.284091] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.302269] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.327140] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.353346] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.360787] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.363170] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.383997] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.394041] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.415657] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.416867] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.423997] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.431460] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.440476] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.448085] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.473397] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.497866] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.507115] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.513857] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.534021] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.548765] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.556486] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.558985] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.562924] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.569648] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.590806] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.592449] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.611952] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.618859] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.631654] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.650691] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.688841] Aborting journal on device sda1-8.
+[ 1390.690735] blk_update_request: I/O error, dev sda, sector 4866152
+[ 1390.690764] blk_update_request: I/O error, dev sda, sector 8766328
+[ 1390.690781] blk_update_request: I/O error, dev sda, sector 4505352
+[ 1390.690791] blk_update_request: I/O error, dev sda, sector 4579384
+[ 1390.690802] blk_update_request: I/O error, dev sda, sector 4631576
+[ 1390.690815] blk_update_request: I/O error, dev sda, sector 4639840
+[ 1390.691295] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.691363] EXT4-fs error (device sda1) in ext4_setattr:4949: Readonly filesystem
+[ 1390.691374] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.691427] EXT4-fs error (device sda1) in ext4_setattr:4949: Readonly filesystem
+[ 1390.691429] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1390.691433] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.692098] EXT4-fs error (device sda1) in ext4_setattr:4949: Readonly filesystem
+[ 1390.692100] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1390.692107] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.696268] EXT4-fs error (device sda1) in ext4_setattr:4949: Readonly filesystem
+[ 1390.696273] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1390.696295] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.696384] EXT4-fs error (device sda1) in ext4_setattr:4949: Readonly filesystem
+[ 1390.696386] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1390.696395] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.699240] EXT4-fs error (device sda1) in __ext4_new_inode:895: Readonly filesystem
+[ 1390.699244] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1390.699262] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.700432] EXT4-fs error (device sda1) in ext4_setattr:4949: Readonly filesystem
+[ 1390.700436] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1390.700452] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.700611] EXT4-fs error (device sda1) in __ext4_new_inode:895: Readonly filesystem
+[ 1390.700612] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1390.700618] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.701062] EXT4-fs error (device sda1) in ext4_setattr:4949: Readonly filesystem
+[ 1390.701063] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1390.701069] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.701118] EXT4-fs error (device sda1) in ext4_setattr:4949: Readonly filesystem
+[ 1390.701119] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1390.701122] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.701244] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1390.701249] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.713274] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.713367] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.811789] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.824777] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.830104] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.830153] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.861724] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.869546] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.925933] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.930608] sd 2:0:0:0: rejecting I/O to offline device
+[ 1390.932025] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.011703] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.012091] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.012426] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.014023] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.014112] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.019493] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.020162] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.021079] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.021312] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.021421] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.023087] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.023372] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.023597] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.023718] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.023902] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.024078] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.024354] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.024649] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.025037] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.025743] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.026031] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.026239] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.026363] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.026568] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.028236] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.028644] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.028837] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.029473] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.030098] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.030255] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.030394] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.030603] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.030852] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.031794] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.031986] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.032338] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.032492] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.032796] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.032939] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.033174] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.033857] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.034105] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.034717] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.035788] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.036304] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.036408] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.037074] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.037222] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.039806] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.040191] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.041133] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.077887] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.121089] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.123258] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.123611] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.135731] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.137541] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.138823] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.139621] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.146204] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.146304] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.146363] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.146417] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.146471] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.146521] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.146568] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.150021] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.150191] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.150318] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.162252] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.162463] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.162525] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.162581] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.162631] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.162685] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.162732] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.162782] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.162838] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.162887] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.162986] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.163038] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.163085] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.163133] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.163181] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.163228] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.163277] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.163324] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.163370] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.163417] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.164364] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.164496] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.164567] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.164620] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.164705] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.164782] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.164838] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.164888] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.164936] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.164984] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.165350] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.165427] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.165483] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.165632] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.165837] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.165985] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.166054] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.166108] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.166167] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.166220] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.171416] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.171523] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.171596] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.171659] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.171717] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.171776] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.171830] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.171883] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.171943] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.171996] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.173371] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.173523] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.173594] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.173657] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.173712] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.173766] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.173820] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.173871] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.173933] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.173984] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.174036] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.174615] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.174716] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.174799] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.175151] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.175231] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.175293] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.175353] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.176263] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.176753] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.176853] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.176923] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.186537] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.186841] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.187120] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.187284] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.187409] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.187495] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.187800] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.188014] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.188098] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.188265] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.188320] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.188367] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.188411] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.188455] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.188498] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.188770] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.188874] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.189070] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.189125] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.196839] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.203672] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.207541] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.207832] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.207940] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.208085] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.208163] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.208233] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.208295] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.209122] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.209198] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.209256] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.209311] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.209363] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.209448] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.209502] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.209553] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.209603] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.209653] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.210200] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.210294] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.210366] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.210433] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.210498] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.210550] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.210604] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.210665] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.210715] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.210865] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.210925] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.211036] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.211167] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.211233] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.211300] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.211361] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.211419] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.211477] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.211521] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.212372] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.212420] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.212463] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.212501] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.212538] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.212575] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.212630] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.212667] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.212723] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.247307] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.698083] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.698215] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.698311] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.698398] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.698473] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.698539] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.698600] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.698658] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.698714] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.727480] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.727850] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.728108] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.728217] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.728309] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.728416] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.728655] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.729169] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.729275] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.729529] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.729535] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.730045] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.730129] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.730193] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.730253] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.730310] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.730365] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.730422] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.730478] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.730534] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.732365] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.732502] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.739262] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.739447] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.739504] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.739564] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.739731] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.739842] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.739893] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.743684] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.745824] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.745907] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.746040] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.746106] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.746161] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.746213] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.746264] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.746316] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.746367] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.805654] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.805840] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.805905] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.806062] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.806126] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.806181] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.806232] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.806282] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.806358] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.827691] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.827894] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.828050] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.828181] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.828295] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.838746] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.838891] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.839118] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.840920] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.841016] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.841137] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.841204] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.841264] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.841320] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.841375] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.841435] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.841491] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.841547] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.841792] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.841850] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.841907] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.841962] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.842012] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.842061] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.842114] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.906845] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.907941] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.908068] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.908145] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.908216] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.908282] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.908338] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.908397] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.916197] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.917147] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.922179] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.922299] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.923750] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.924573] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.924986] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.925370] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.929017] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.929175] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.929240] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.929283] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.929326] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.929365] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.929425] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.929483] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.935546] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.935627] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.935685] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.935740] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.935794] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.935849] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.935901] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.935950] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.985834] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.985912] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.985967] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.986018] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.986069] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.986119] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.986168] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.986216] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.990060] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.990395] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.991679] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.991928] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.992149] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.992254] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.992328] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.992393] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.994880] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.994952] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.995005] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.995060] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.995132] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.995193] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.995253] sd 2:0:0:0: rejecting I/O to offline device
+[ 1391.995310] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.010076] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.010195] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.010276] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.010338] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.010420] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.010812] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.010888] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.011150] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.024992] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.025136] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.025208] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.025265] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.025317] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.025371] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.025428] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.025484] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.186171] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.186185] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.186260] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.186268] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.202182] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.202196] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.202208] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.202212] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.202223] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.202226] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.202235] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.202247] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.202250] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.202258] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.202261] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.202268] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.202271] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209554] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209569] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209575] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209579] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209584] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209589] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209593] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209597] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209601] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209605] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209609] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209613] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209616] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209623] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209627] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209631] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209635] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209638] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209642] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209646] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209656] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209667] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209671] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209674] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209676] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209679] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209681] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209684] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209687] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209689] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209692] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209694] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209696] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.209701] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.210260] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.210265] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.210267] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.210370] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.210373] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.211097] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.211700] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.211711] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.211754] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.231708] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.231720] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.246431] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.246443] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.246445] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.246451] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.247471] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.247480] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.247486] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.266953] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.430575] sd 2:0:0:0: rejecting I/O to offline device
+[ 1392.437296] sd 2:0:0:0: rejecting I/O to offline device
+[ 1399.797146] sd 2:0:0:0: rejecting I/O to offline device
+[ 1399.800035] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1401.688196] sd 2:0:0:0: rejecting I/O to offline device
+[ 1401.690948] JBD2: Error -5 detected when updating journal superblock for sda1-8.
+[ 1401.749405] sd 2:0:0:0: rejecting I/O to offline device
+[ 1401.749483] EXT4-fs error (device sda1): ext4_journal_check_start:56: Detected aborted journal
+[ 1401.749484] EXT4-fs (sda1): Remounting filesystem read-only
+[ 1401.749486] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1405.688057] sd 2:0:0:0: rejecting I/O to offline device
+[ 1405.689663] JBD2: Error -5 detected when updating journal superblock for sda1-8.
+[ 1405.780418] sd 2:0:0:0: rejecting I/O to offline device
+[ 1405.952249] sd 2:0:0:0: rejecting I/O to offline device
+[ 1405.956053] sd 2:0:0:0: rejecting I/O to offline device
+[ 1405.957416] sd 2:0:0:0: rejecting I/O to offline device
+[ 1405.960908] sd 2:0:0:0: rejecting I/O to offline device
+[ 1405.964880] sd 2:0:0:0: rejecting I/O to offline device
+[ 1405.988332] sd 2:0:0:0: rejecting I/O to offline device
+[ 1405.990847] sd 2:0:0:0: rejecting I/O to offline device
+[ 1406.011745] sd 2:0:0:0: rejecting I/O to offline device
+[ 1406.022101] sd 2:0:0:0: rejecting I/O to offline device
+[ 1406.084692] sd 2:0:0:0: rejecting I/O to offline device
+[ 1406.085188] EXT4-fs error (device sda1): ext4_find_entry:1450: inode #12: comm (true): reading directory lblock 0
+[ 1406.085191] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1407.689036] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.690933] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.709087] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.719894] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.724990] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.751296] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.765489] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.776678] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.782341] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.790164] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.791400] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.799382] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.822902] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.830493] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.855231] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.869093] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.882275] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.883660] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.886333] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.888234] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.904146] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.921948] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.923427] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.943791] sd 2:0:0:0: rejecting I/O to offline device
+[ 1407.970260] EXT4-fs error (device sda1): __ext4_get_inode_loc:4077: inode #817: block 212: comm systemd: unable to read itable block
+[ 1408.001229] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1408.030060] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.041823] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.051827] EXT4-fs error (device sda1): ext4_find_entry:1450: inode #322: comm systemd: reading directory lblock 0
+[ 1408.077332] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1408.086891] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.102735] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.112233] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.225430] EXT4-fs error (device sda1): ext4_find_entry:1450: inode #2343: comm systemd: reading directory lblock 0
+[ 1408.232648] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.251944] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1408.260801] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.484968] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.496824] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.506522] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.510821] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.520424] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.561727] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.589287] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.622505] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.648163] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.659814] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.668294] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.686821] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.696188] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.711369] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.735202] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.761678] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.772063] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.798806] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.802691] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.810692] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.835003] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.842709] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.857172] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.876376] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.885251] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.904542] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.912250] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.918580] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.929553] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.935615] sd 2:0:0:0: rejecting I/O to offline device
+[ 1408.939564] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.004937] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.024970] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.029865] EXT4-fs error (device sda1): __ext4_get_inode_loc:4077: inode #817: block 212: comm systemd: unable to read itable block
+[ 1409.048649] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1409.056273] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.097979] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.234157] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.247193] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.260395] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.286680] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.298530] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.321854] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.323561] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.356861] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.402241] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.429563] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.444377] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.466353] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.506224] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.518901] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.529489] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.553560] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.566850] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.579517] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.592456] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.613508] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.622287] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.647937] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.669716] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.681794] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.701945] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.718200] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.720635] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.728290] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.741600] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.747089] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.757722] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.763368] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.774029] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.797137] EXT4-fs error (device sda1): __ext4_get_inode_loc:4077: inode #817: block 212: comm systemd: unable to read itable block
+[ 1409.808496] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1409.820864] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.845326] sd 2:0:0:0: rejecting I/O to offline device
+[ 1409.985098] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.071232] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.106431] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.122667] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.127695] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.151125] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.220476] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.262589] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.391410] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.540569] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.547384] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.560740] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.593680] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.629081] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.638997] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.643585] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.647191] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.651192] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.657251] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.667833] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.670877] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.676442] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.686965] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.703099] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.726920] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.732523] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.747159] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.755432] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.757645] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.776834] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.786465] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.827200] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.832409] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.862406] EXT4-fs error (device sda1): __ext4_get_inode_loc:4077: inode #817: block 212: comm systemd: unable to read itable block
+[ 1410.887384] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1410.912577] sd 2:0:0:0: rejecting I/O to offline device
+[ 1410.945837] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.259261] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.320357] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.347099] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.508221] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.594351] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.672710] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.770022] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.792987] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.801654] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.814687] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.827896] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.839673] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.855365] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.861421] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.866699] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.876835] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.885910] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.887640] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.889357] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.894136] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.911528] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.956233] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.968747] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.987069] sd 2:0:0:0: rejecting I/O to offline device
+[ 1411.998744] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.014794] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.034623] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.069077] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.074386] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.084618] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.088018] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.100558] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.110083] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.114432] EXT4-fs error (device sda1): __ext4_get_inode_loc:4077: inode #817: block 212: comm systemd: unable to read itable block
+[ 1412.159772] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1412.177810] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.216644] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.499380] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.581156] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.596222] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.652391] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.660718] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.690059] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.692333] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.694600] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.715493] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.726049] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.747380] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.755410] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.764032] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.782846] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.788928] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.801415] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.806708] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.829403] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.831354] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.840957] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.856567] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.884586] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.918448] sd 2:0:0:0: rejecting I/O to offline device
+[ 1412.941656] sd 2:0:0:0: rejecting I/O to offline device
+[ 1413.035756] sd 2:0:0:0: rejecting I/O to offline device
+[ 1413.088547] sd 2:0:0:0: rejecting I/O to offline device
+[ 1413.109017] sd 2:0:0:0: rejecting I/O to offline device
+[ 1413.116290] sd 2:0:0:0: rejecting I/O to offline device
+[ 1413.131060] sd 2:0:0:0: rejecting I/O to offline device
+[ 1413.145142] sd 2:0:0:0: rejecting I/O to offline device
+[ 1413.185294] sd 2:0:0:0: rejecting I/O to offline device
+[ 1413.204836] sd 2:0:0:0: rejecting I/O to offline device
+[ 1413.225632] sd 2:0:0:0: rejecting I/O to offline device
+[ 1413.289314] EXT4-fs error (device sda1): __ext4_get_inode_loc:4077: inode #817: block 212: comm systemd: unable to read itable block
+[ 1413.309461] EXT4-fs (sda1): previous I/O error to superblock detected
+[ 1413.317215] sd 2:0:0:0: rejecting I/O to offline device

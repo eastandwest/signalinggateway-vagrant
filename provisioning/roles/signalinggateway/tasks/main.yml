@@ -2,12 +2,12 @@
 # tasks file for provisioning/roles/base
 
 - name: clone signalinggateway repo on home directory
-  git: repo=https://github.com/eastandwest/signalinggateway.git dest=/home/vagrant/signalinggateway
+  git: repo=https://github.com/eastandwest/signalinggateway.git dest=/home/ubuntu/signalinggateway
 
 - name: install depedency libraries
-  command: npm install
+  command: npm install --production
   args:
-    chdir: /home/vagrant/signalinggateway
+    chdir: /home/ubuntu/signalinggateway
 
 - name: change owner
-  command: chown -R vagrant.vagrant /home/vagrant/signalinggateway
+  command: chown -R ubuntu.ubuntu /home/ubuntu/signalinggateway
