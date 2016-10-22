@@ -10,19 +10,19 @@ wget https://github.com/cisco/libsrtp/archive/v1.5.0.tar.gz
 tar xfv v1.5.0.tar.gz
 cd libsrtp-1.5.0
 ./configure --prefix=/usr --enable-openssl
-make libsrtp.so; sudo make install
+make libsrtp.so; sudo make uninstall; sudo make install
 
 # Install libsctp, for data channel
 cd ~/janus-install
 git clone https://github.com/sctplab/usrsctp
 cd usrsctp
 ./bootstrap
-./configure --prefix=/usr; make; sudo make uninstall; sudo make install
+./configure --prefix=/usr; make; sudo make install
 
 
 # Clone SkywayIoT plugin and apply on janus-gateway
 cd ~/janus-install
-git clone https://github.com/eastandwest/janus-skywayiot-plugin.git
+git clone --branch v0.4 https://github.com/eastandwest/janus-skywayiot-plugin.git
 
 # Install janus-gateway
 cd ~/janus-install

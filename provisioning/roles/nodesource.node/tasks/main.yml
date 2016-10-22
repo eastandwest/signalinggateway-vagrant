@@ -21,9 +21,3 @@
     state: installed
     update_cache: yes
 
-- name: Install npm modules
-  npm: name={{item}} global=yes
-  with_items:
-    - mocha
-    - forever
-
