@@ -1,11 +1,10 @@
 ---
 - hosts: janusservers
   sudo: yes
-  remote_user: vagrant
+  remote_user: ubuntu
   roles:
   - base
   - vim
-  - HanXHX.redis
   - bennojoy.nginx
   - nodesource.node
   - signalinggateway

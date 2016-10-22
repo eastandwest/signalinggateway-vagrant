@@ -17,7 +17,7 @@ cd ~/janus-install
 git clone https://github.com/sctplab/usrsctp
 cd usrsctp
 ./bootstrap
-./configure --prefix=/usr; make; sudo make install
+./configure --prefix=/usr; make; sudo make uninstall; sudo make install
 
 
 # Clone SkywayIoT plugin and apply on janus-gateway
@@ -27,17 +27,11 @@ git clone https://github.com/eastandwest/janus-skywayiot-plugin.git
 # Install janus-gateway
 cd ~/janus-install
 git clone https://github.com/meetecho/janus-gateway.git
-cd janus-skywayiot-plugin
-bash addplugin.sh
-cd ../janus-gateway
+# cd janus-skywayiot-plugin
+# bash addplugin.sh
+cd ./janus-gateway
 sh autogen.sh
-./configure --prefix=/opt/janus --disable-rabbitmq --disable-docs --disable-websockets
+./configure --prefix=/opt/janus --disable-mqtt --disable-rabbitmq --disable-docs --disable-websockets --disable-mqtt
 make
 sudo make install
 sudo make configs
-
-
-# make symbolic link
-cd /home/vagrant
-ln -s /opt/janus/share/janus/streams /home/vagrant/streams
-chown -R vagrant:vagrant /home/vagrant/streams

@@ -16,8 +16,6 @@
   - libglib2.0-dev
   - libopus-dev
   - libogg-dev
-  - libini-config-dev
-  - libcollection-dev
   - pkg-config
   - gengetopt
   - libtool
@@ -26,7 +24,7 @@
 - name : install janus
   script : janus.sh
   become: yes
-  become_user: vagrant
+  become_user: ubuntu
 - name : enable https port
   replace: dest=/opt/janus/etc/janus/janus.transport.http.cfg regexp='https = no' replace='https = yes' backup=yes
 - name : enable https port
