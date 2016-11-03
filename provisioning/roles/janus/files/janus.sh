@@ -27,8 +27,8 @@ git clone --branch v0.4 https://github.com/eastandwest/janus-skywayiot-plugin.gi
 # Install janus-gateway
 cd ~/janus-install
 git clone https://github.com/meetecho/janus-gateway.git
-# cd janus-skywayiot-plugin
-# bash addplugin.sh
+cd janus-skywayiot-plugin
+bash addplugin.sh
 cd ./janus-gateway
 sh autogen.sh
 ./configure --prefix=/opt/janus --disable-mqtt --disable-rabbitmq --disable-docs --disable-websockets --disable-mqtt
