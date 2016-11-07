@@ -29,7 +29,7 @@ cd ~/janus-install
 git clone https://github.com/meetecho/janus-gateway.git
 cd janus-skywayiot-plugin
 bash addplugin.sh
-cd ./janus-gateway
+cd ../janus-gateway
 sh autogen.sh
 ./configure --prefix=/opt/janus --disable-mqtt --disable-rabbitmq --disable-docs --disable-websockets --disable-mqtt
 make
