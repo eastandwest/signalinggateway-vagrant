@@ -1,52 +1,46 @@
 # Install Node.js using packages crafted by NodeSource
 ---
-# - name: Ensure the system can use the HTTPS transport for APT
-#   stat:
-#     path: /usr/lib/apt/methods/https
-#   register: apt_https_transport
+- name: Ensure the system can use the HTTPS transport for APT
+  stat:
+    path: /usr/lib/apt/methods/https
+  register: apt_https_transport
 
-# - name: Install HTTPS transport for APT
-#   apt:
-#     pkg: apt-transport-https
-#     state: installed
-#   when: not apt_https_transport.stat.exists
+- name: Install HTTPS transport for APT
+  apt:
+    pkg: apt-transport-https
+    state: installed
+  when: not apt_https_transport.stat.exists
 
-# - name: Setup NodeSource repository
-#   shell: curl -sL https://deb.nodesource.com/setup_{{ nodejs_version }} | sudo -E bash -
-  # get_url: https://deb.nodesource.com/setup_{{ nodejs_version }}
+- name: Setup NodeSource repository
+  shell: curl -sL https://deb.nodesource.com/setup_{{ nodejs_version }} | sudo -E bash -
 
-# - name: Install Node.js
-#   apt:
-#     pkg:
-#       - nodejs
-#     state: installed
-#     update_cache: yes
+- name: Install Node.js
+  apt:
+    pkg:
+      - nodejs
+    state: installed
+    update_cache: yes
 
 
-- name: update apt
-  shell: sudo apt-get update
 
-- name: Install node
-  shell: sudo apt-get install -y nodejs npm
+# - name: update apt
+#   shell: sudo apt-get update
 
-- name: clean cache
-  shell: sudo npm cache clean
+# - name: Install node
+#   shell: sudo apt-get install -y nodejs npm
 
-- name: npm install n
-  shell: sudo npm install n -g
+# - name: clean cache
+#   shell: sudo npm cache clean
 
-- name: n stable
-  shell: sudo n stable
+# - name: npm install n
+#   shell: sudo npm install n -g
 
-- name: ln
-  shell: sudo ln -sf /usr/local/bin/node /usr/bin/node
+# - name: n stable
+#   shell: sudo n stable
 
-- name: purge
-  shell: sudo apt-get purge -y nodejs npm
+# - name: ln
+#   shell: sudo ln -sf /usr/local/bin/node /usr/bin/node
 
-- name: Install npm modules
-  npm: name={{item}} global=yes
-  with_items:
-    - mocha
-    - forever
+# - name: purge
+#   shell: sudo apt-get purge -y nodejs npm
 

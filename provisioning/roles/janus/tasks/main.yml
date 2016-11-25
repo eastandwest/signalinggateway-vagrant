@@ -16,8 +16,6 @@
   - libglib2.0-dev
   - libopus-dev
   - libogg-dev
-  - libini-config-dev
-  - libcollection-dev
   - pkg-config
   - gengetopt
   - libtool

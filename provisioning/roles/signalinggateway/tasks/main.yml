@@ -5,7 +5,7 @@
   git: repo=https://github.com/eastandwest/signalinggateway.git dest=/home/{{remote_user}}/signalinggateway
 
 - name: install depedency libraries
-  command: npm install
+  command: npm install --production
   args:
     chdir: /home/{{remote_user}}/signalinggateway
 

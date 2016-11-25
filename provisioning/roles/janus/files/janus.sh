@@ -11,7 +11,7 @@ wget https://github.com/cisco/libsrtp/archive/v1.5.0.tar.gz
 tar xfv v1.5.0.tar.gz
 cd libsrtp-1.5.0
 ./configure --prefix=/usr --enable-openssl
-make libsrtp.so; sudo make install
+make libsrtp.so; sudo make uninstall; sudo make install
 
 # Install libsctp, for data channel
 cd ~/janus-install
@@ -23,7 +23,7 @@ cd usrsctp
 
 # Clone SkywayIoT plugin and apply on janus-gateway
 cd ~/janus-install
-git clone https://github.com/eastandwest/janus-skywayiot-plugin.git
+git clone --branch v0.4 https://github.com/eastandwest/janus-skywayiot-plugin.git
 
 # Install janus-gateway
 cd ~/janus-install
@@ -32,13 +32,7 @@ cd janus-skywayiot-plugin
 bash addplugin.sh
 cd ../janus-gateway
 sh autogen.sh
-./configure --prefix=/opt/janus --disable-rabbitmq --disable-docs --disable-websockets
+./configure --prefix=/opt/janus --disable-mqtt --disable-rabbitmq --disable-docs --disable-websockets --disable-mqtt
 make
 sudo make install
 sudo make configs
-
-
-# make symbolic link
-cd /home/${username}
-ln -s /opt/janus/share/janus/streams /home/${username}/streams
-chown -R ${username}:${username} /home/${username}/streams

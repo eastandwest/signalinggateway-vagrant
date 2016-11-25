@@ -4,7 +4,6 @@
   roles:
   - base
   - vim
-  - HanXHX.redis
   - bennojoy.nginx
   - nodesource.node
   - signalinggateway
