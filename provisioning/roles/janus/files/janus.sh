@@ -26,7 +26,7 @@ git clone --branch v0.4 https://github.com/eastandwest/janus-skywayiot-plugin.gi
 
 # Install janus-gateway
 cd ~/janus-install
-git clone https://github.com/meetecho/janus-gateway.git
+git clone --branch v0.2.0 https://github.com/meetecho/janus-gateway.git
 cd janus-skywayiot-plugin
 bash addplugin.sh
 cd ../janus-gateway
