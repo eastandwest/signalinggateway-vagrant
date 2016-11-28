@@ -20,7 +20,6 @@ cd usrsctp
 ./bootstrap
 ./configure --prefix=/usr; make; sudo make install
 
-
 # Clone SkywayIoT plugin and apply on janus-gateway
 cd ~/janus-install
 git clone --branch v0.4 https://github.com/eastandwest/janus-skywayiot-plugin.git
