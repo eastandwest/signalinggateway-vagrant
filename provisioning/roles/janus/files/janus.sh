@@ -1,4 +1,5 @@
 #!/bin/bash
+username=$1
 
 # create working directory
 mkdir ~/janus-install
