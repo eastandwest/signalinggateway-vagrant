@@ -65,20 +65,20 @@ $ node echo_data
 
 ```
 $ cd ~/signalinggateway/skywayiot-sdk-test
-$ node media_streaming_transfer_test.sh
+$ sh media_streaming_transfer_test.sh
 ```
 
 * run sample voice receiving app (record it to __recorded_audio.wav__)
 
 ```
 $ cd ~/signalinggateway/skywayiot-sdk-test
-$ node voice_streaming_receiving_test.sh
+$ sh voice_streaming_receiving_test.sh
 ```
 
 Now is the time to try example web app (use **chrome** or **firefox**)
 
 ```
-$ open http://192.168.33.10:3000/examples
+$ open https://192.168.33.10:3000/examples
 ```
 
 Then, do following step
