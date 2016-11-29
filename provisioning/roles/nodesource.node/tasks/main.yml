@@ -12,7 +12,7 @@
   when: not apt_https_transport.stat.exists
 
 - name: Setup NodeSource repository
-  shell: sudo dpkg --configure -a | curl -sL https://deb.nodesource.com/setup_{{ nodejs_version }} | sudo -E bash -
+  shell: curl -sL https://deb.nodesource.com/setup_{{ nodejs_version }} | sudo -E bash -
 
 - name: Install Node.js
   apt:
