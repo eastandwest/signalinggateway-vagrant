@@ -2,6 +2,15 @@
 
 Vagrant files for building reference skyway-signaling-gateway environment
 
+## required environment
+
+- vagrant
+ - 1.8.7 or upper
+- ansible
+ - 1.9.0
+- virtural box
+ - 5.0.30 or upper
+
 ## how to build
 
 ```
