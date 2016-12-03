@@ -61,13 +61,6 @@ $ cd ~/signalinggateway/skywayiot-sdk-test
 $ node echo_data
 ```
 
-* run sample video streaming
-
-```
-$ cd ~/signalinggateway/skywayiot-sdk-test
-$ sh media_streaming_transfer_test.sh
-```
-
 * run sample voice receiving app (record it to __recorded_audio.wav__)
 
 ```
