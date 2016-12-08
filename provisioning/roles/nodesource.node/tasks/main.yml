@@ -20,4 +20,3 @@
       - nodejs
     state: installed
     update_cache: yes
-

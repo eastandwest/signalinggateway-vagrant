@@ -1,4 +1,5 @@
 #!/bin/bash
+username=$1
 
 # create working directory
 mkdir ~/janus-install
@@ -10,7 +11,6 @@ git clone https://github.com/sctplab/usrsctp
 cd usrsctp
 ./bootstrap
 ./configure --prefix=/usr; make; sudo make install
-
 
 # Clone Janus-gateway and SkywayIoT plugin then attach plugin.
 # Since tag v0.2.0 throw error while make process, we will not set any version.

@@ -1,7 +1,6 @@
 ---
 - hosts: janusservers
   sudo: yes
-  remote_user: ubuntu
   roles:
   - base
   - vim
