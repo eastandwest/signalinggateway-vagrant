@@ -2,7 +2,7 @@
 # tasks file for provisioning/roles/base
 
 - name: clone signalinggateway repo on home directory
-  git: repo=https://github.com/eastandwest/signalinggateway.git version=v0.4.2 dest=/home/ubuntu/signalinggateway
+  git: repo=https://github.com/eastandwest/signalinggateway.git version=v0.4.3 dest=/home/ubuntu/signalinggateway
 
 - name: install depedency libraries
   command: npm install --production
