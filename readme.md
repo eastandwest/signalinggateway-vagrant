@@ -7,7 +7,7 @@ Vagrant files for building reference skyway-signaling-gateway environment
 - vagrant
  - 1.8.7 or upper
 - ansible
- - 1.9.0
+ - 2.2.0
 - virtural box
  - 5.0.30 or upper
 
@@ -21,10 +21,21 @@ $ vagrant up
 
 ### RaspberryPi
 
-* Update hosts file
+* Update ``provisioning/hosts``
+
+change IP address from ``192.168.33.11`` to your RPI. A sample below assumes that IP address is 192.168.0.2.
 
 ```
-vi provisioning/hosts
+[janusservers]
+192.168.0.2
+```
+
+* Update ``provisioning/group_vars/all.yaml
+
+cahge user name from ``ubuntu`` to ``pi``
+
+```
+remote_user: pi
 ```
 
 * Run ansible

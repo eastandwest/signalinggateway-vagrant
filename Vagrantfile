@@ -18,7 +18,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision "ansible" do |ansible|
     ansible.limit = 'janusservers'
-    ansible.inventory_path = 'provisioning/development'
+    ansible.inventory_path = 'provisioning/hosts'
     ansible.playbook = 'provisioning/site.yml'
   end
   config.vm.provider "virtualbox" do |v|
