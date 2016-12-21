@@ -16,7 +16,7 @@ cd usrsctp
 # Since tag v0.2.0 throw error while make process, we will not set any version.
 
 cd ~/janus-install
-git clone https://github.com/meetecho/janus-gateway.git
+git clone --branch v0.2.1 https://github.com/meetecho/janus-gateway.git
 git clone --branch v0.4 https://github.com/eastandwest/janus-skywayiot-plugin.git
 cd janus-skywayiot-plugin
 bash addplugin.sh
