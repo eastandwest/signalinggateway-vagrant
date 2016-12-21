@@ -30,9 +30,9 @@ change IP address from ``192.168.33.11`` to your RPI. A sample below assumes tha
 192.168.0.2
 ```
 
-* Update ``provisioning/group_vars/all.yaml
+* Update ``provisioning/group_vars/all.yaml``
 
-cahge user name from ``ubuntu`` to ``pi``
+change user name from ``ubuntu`` to ``pi``
 
 ```
 remote_user: pi
@@ -110,8 +110,21 @@ Then, do following step
 
 ## run ansible-playbook manually
 
+For example, when you using openstack you need to run ansible-playbook directory. Below is sample command to do it.
+(please note that you need to change IP address of provisioning/hosts. We only support ubuntu16.04LTS)
+
 ```
-$ ansible-playbook --private-key=.vagrant/machines/default/virtualbox/private_key -i provisioning/development provisioning/site.yml
+$ ansible-playbook --private-key=~/.ssh/key.pem -i provisioning/hosts -u ubuntu provisioning/site.yml
 ```
+
+In addition to that during launching instance process, you need to set below script in ``Customization Script``.
+
+```
+#cloud-config
+manage_etc_hosts: true
+packages:
+  - python-simplejson
+```
+
 
 &copy; kensaku komatsu, 2016
